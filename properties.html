@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse 1000+ verified properties across India. Apartments, Villas, Plots in Mumbai, Delhi, Bangalore, and more. Best prices guaranteed.">
+    <meta name="keywords" content="properties India, flats for sale India, apartments India, villas India, plots India">
+    <title>Properties for Sale in India | Apartments, Villas, Plots | Indian Homes Realty</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-info">
+                    <span><i class="fas fa-map-marker-alt"></i> Mumbai, India</span>
+                    <span><i class="fas fa-envelope"></i> info@indianhomesrealty.com</span>
+                </div>
+                <div class="top-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon"><i class="fas fa-building"></i></span>
+                    <span class="logo-text">Indian Homes<span>Realty</span></span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="properties.html" class="active">Properties</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="tel:+919876543210" class="phone-btn">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+91 98765 43210</span>
+                    </a>
+                </div>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Properties in India</h1>
+            <nav class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>Properties</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <form class="filter-form" id="filterForm">
+                <div class="filter-row">
+                    <div class="filter-group">
+                        <label>Property Type</label>
+                        <select name="type">
+                            <option value="">All Types</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="villa">Villa</option>
+                            <option value="plot">Plot</option>
+                            <option value="commercial">Commercial</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Location</label>
+                        <select name="location">
+                            <option value="">All Locations</option>
+                            <option value="mumbai">Mumbai</option>
+                            <option value="delhi">Delhi</option>
+                            <option value="bangalore">Bangalore</option>
+                            <option value="chennai">Chennai</option>
+                            <option value="hyderabad">Hyderabad</option>
+                            <option value="pune">Pune</option>
+                            <option value="kolkata">Kolkata</option>
+                            <option value="gurgaon">Gurgaon</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Bedrooms</label>
+                        <select name="bedrooms">
+                            <option value="">Any</option>
+                            <option value="1">1 BHK</option>
+                            <option value="2">2 BHK</option>
+                            <option value="3">3 BHK</option>
+                            <option value="4">4 BHK</option>
+                            <option value="5">5+ BHK</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Min Budget</label>
+                        <select name="minBudget">
+                            <option value="">No Min</option>
+                            <option value="20">₹20 Lakhs</option>
+                            <option value="30">₹30 Lakhs</option>
+                            <option value="50">₹50 Lakhs</option>
+                            <option value="80">₹80 Lakhs</option>
+                            <option value="100">₹1 Crore</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Max Budget</label>
+                        <select name="maxBudget">
+                            <option value="">No Max</option>
+                            <option value="50">₹50 Lakhs</option>
+                            <option value="80">₹80 Lakhs</option>
+                            <option value="100">₹1 Crore</option>
+                            <option value="200">₹2 Crores</option>
+                            <option value="500">₹5 Crores</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-search"></i> Search
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Properties Grid -->
+    <section class="properties-listing section">
+        <div class="container">
+            <div class="listing-header">
+                <p class="results-count">Showing <strong>24</strong> properties</p>
+                <div class="sort-options">
+                    <label>Sort by:</label>
+                    <select id="sortSelect">
+                        <option value="featured">Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="newest">Newest First</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="properties-grid">
+                <!-- Property Card 1 -->
+                <div class="property-card" data-type="apartment" data-location="mumbai" data-price="180">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600" alt="Luxury Apartment in Mumbai">
+                        <span class="property-tag hot">Hot Deal</span>
+                        <span class="property-price">₹1.8 Crores</span>
+                        <div class="property-overlay">
+                            <a href="property-details.html" class="btn btn-white">View Details</a>
+                        </div>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-location">
+                            <i class="fas fa-map-marker-alt"></i> Bandra, Mumbai
+                        </div>
+                        <h3>Luxury 3 BHK Apartment</h3>
+                        <p class="property-desc">Modern apartment with sea view, premium amenities, swimming pool, and gym.</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 3 Beds</span>
+                            <span><i class="fas fa-bath"></i> 3 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 1800 sqft</span>
+                        </div>
+                        <div class="property-footer">
+                            <a href="tel:+919876543210" class="btn btn-outline-primary">
+                                <i class="fas fa-phone"></i> Call Now
+                            </a>
+                            <a href="https://wa.me/919876543210" class="btn btn-whatsapp">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card 2 -->
+                <div class="property-card" data-type="villa" data-location="delhi" data-price="350">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600" alt="Villa in Delhi">
+                        <span class="property-tag premium">Premium</span>
+                        <span class="property-price">₹3.5 Crores</span>
+                        <div class="property-overlay">
+                            <a href="property-details.html" class="btn btn-white">View Details</a>
+                        </div>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-location">
+                            <i class="fas fa-map-marker-alt"></i> South Delhi, Delhi
+                        </div>
+                        <h3>Posh 4 BHK Villa</h3>
+                        <p class="property-desc">Stunning villa with private garden, modern interiors, and servant quarters.</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 4 Beds</span>
+                            <span><i class="fas fa-bath"></i> 5 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 4200 sqft</span>
+                        </div>
+                        <div class="property-footer">
+                            <a href="tel:+919876543210" class="btn btn-outline-primary">
+                                <i class="fas fa-phone"></i> Call Now
+                            </a>
+                            <a href="https://wa.me/919876543210" class="btn btn-whatsapp">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card 3 -->
+                <div class="property-card" data-type="apartment" data-location="bangalore" data-price="120">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600" alt="Apartment in Bangalore">
+                        <span class="property-tag new">New Launch</span>
+                        <span class="property-price">₹1.2 Crores</span>
+                        <div class="property-overlay">
+                            <a href="property-details.html" class="btn btn-white">View Details</a>
+                        </div>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-location">
+                            <i class="fas fa-map-marker-alt"></i> Koramangala, Bangalore
+                        </div>
+                        <h3>Premium 3 BHK Flat</h3>
+                        <p class="property-desc">Newly launched project in IT hub with clubhouse & landscaped gardens.</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 3 Beds</span>
+                            <span><i class="fas fa-bath"></i> 3 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 1850 sqft</span>
+                        </div>
+                        <div class="property-footer">
+                            <a href="tel:+919876543210" class="btn btn-outline-primary">
+                                <i class="fas fa-phone"></i> Call Now
+                            </a>
+                            <a href="https://wa.me/919876543210" class="btn btn-whatsapp">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card 4 -->
+                <div class="property-card" data-type="apartment" data-location="pune" data-price="85">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600" alt="Apartment in Pune">
+                        <span class="property-tag">Ready to Move</span>
+                        <span class="property-price">₹85 Lakhs</span>
+                        <div class="property-overlay">
+                            <a href="property-details.html" class="btn btn-white">View Details</a>
+                        </div>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-location">
+                            <i class="fas fa-map-marker-alt"></i> Hinjewadi, Pune
+                        </div>
+                        <h3>Spacious 2 BHK Apartment</h3>
+                        <p class="property-desc">Well-maintained apartment in IT park with covered parking and amenities.</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 2 Beds</span>
+                            <span><i class="fas fa-bath"></i> 2 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 1150 sqft</span>
+                        </div>
+                        <div class="property-footer">
+                            <a href="tel:+919876543210" class="btn btn-outline-primary">
+                                <i class="fas fa-phone"></i> Call Now
+                            </a>
+                            <a href="https://wa.me/919876543210" class="btn btn-whatsapp">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card 5 -->
+                <div class="property-card" data-type="plot" data-location="hyderabad" data-price="60">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600" alt="Plot in Hyderabad">
+                        <span class="property-tag hot">Investment</span>
+                        <span class="property-price">₹60 Lakhs</span>
+                        <div class="property-overlay">
+                            <a href="property-details.html" class="btn btn-white">View Details</a>
+                        </div>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-location">
+                            <i class="fas fa-map-marker-alt"></i> Gachibowli, Hyderabad
+                        </div>
+                        <h3>Premium Residential Plot</h3>
+                        <p class="property-desc">HMDA approved plot in a gated community with all modern amenities.</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-ruler-combined"></i> 1500 sqft</span>
+                            <span><i class="fas fa-road"></i> 40ft Road</span>
+                            <span><i class="fas fa-file-contract"></i> HMDA</span>
+                        </div>
+                        <div class="property-footer">
+                            <a href="tel:+919876543210" class="btn btn-outline-primary">
+                                <i class="fas fa-phone"></i> Call Now
+                            </a>
+                            <a href="https://wa.me/919876543210" class="btn btn-whatsapp">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card 6 -->
+                <div class="property-card" data-type="villa" data-location="chennai" data-price="280">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=600" alt="Villa in Chennai">
+                        <span class="property-tag premium">Luxury</span>
+                        <span class="property-price">₹2.8 Crores</span>
+                        <div class="property-overlay">
+                            <a href="property-details.html" class="btn btn-white">View Details</a>
+                        </div>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-location">
+                            <i class="fas fa-map-marker-alt"></i> ECR, Chennai
+                        </div>
+                        <h3>Independent 4 BHK Villa</h3>
+                        <p class="property-desc">Gated community villa with private garden, terrace & modular kitchen.</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 4 Beds</span>
+                            <span><i class="fas fa-bath"></i> 4 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 3200 sqft</span>
+                        </div>
+                        <div class="property-footer">
+                            <a href="tel:+919876543210" class="btn btn-outline-primary">
+                                <i class="fas fa-phone"></i> Call Now
+                            </a>
+                            <a href="https://wa.me/919876543210" class="btn btn-whatsapp">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card 7 -->
+                <div class="property-card" data-type="apartment" data-location="gurgaon" data-price="95">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=600" alt="Apartment in Gurgaon">
+                        <span class="property-tag">Prime Location</span>
+                        <span class="property-price">₹95 Lakhs</span>
+                        <div class="property-overlay">
+                            <a href="property-details.html" class="btn btn-white">View Details</a>
+                        </div>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-location">
+                            <i class="fas fa-map-marker-alt"></i> Golf Course Road, Gurgaon
+                        </div>
+                        <h3>Modern 2 BHK Flat</h3>
+                        <p class="property-desc">Premium apartment in a posh locality near metro and malls.</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 2 Beds</span>
+                            <span><i class="fas fa-bath"></i> 2 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 1250 sqft</span>
+                        </div>
+                        <div class="property-footer">
+                            <a href="tel:+919876543210" class="btn btn-outline-primary">
+                                <i class="fas fa-phone"></i> Call Now
+                            </a>
+                            <a href="https://wa.me/919876543210" class="btn btn-whatsapp">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card 8 -->
+                <div class="property-card" data-type="commercial" data-location="bangalore" data-price="250">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600" alt="Commercial Space in Bangalore">
+                        <span class="property-tag new">Commercial</span>
+                        <span class="property-price">₹2.5 Crores</span>
+                        <div class="property-overlay">
+                            <a href="property-details.html" class="btn btn-white">View Details</a>
+                        </div>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-location">
+                            <i class="fas fa-map-marker-alt"></i> Whitefield, Bangalore
+                        </div>
+                        <h3>Premium Office Space</h3>
+                        <p class="property-desc">Ready office space in IT hub with ample parking & power backup.</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-ruler-combined"></i> 3000 sqft</span>
+                            <span><i class="fas fa-car"></i> 15 Parking</span>
+                            <span><i class="fas fa-bolt"></i> Backup</span>
+                        </div>
+                        <div class="property-footer">
+                            <a href="tel:+919876543210" class="btn btn-outline-primary">
+                                <i class="fas fa-phone"></i> Call Now
+                            </a>
+                            <a href="https://wa.me/919876543210" class="btn btn-whatsapp">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card 9 -->
+                <div class="property-card" data-type="apartment" data-location="kolkata" data-price="70">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=600" alt="Apartment in Kolkata">
+                        <span class="property-tag hot">Affordable</span>
+                        <span class="property-price">₹70 Lakhs</span>
+                        <div class="property-overlay">
+                            <a href="property-details.html" class="btn btn-white">View Details</a>
+                        </div>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-location">
+                            <i class="fas fa-map-marker-alt"></i> New Town, Kolkata
+                        </div>
+                        <h3>Budget 3 BHK Apartment</h3>
+                        <p class="property-desc">Affordable apartment near the IT hub with all basic amenities.</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 3 Beds</span>
+                            <span><i class="fas fa-bath"></i> 2 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 1350 sqft</span>
+                        </div>
+                        <div class="property-footer">
+                            <a href="tel:+919876543210" class="btn btn-outline-primary">
+                                <i class="fas fa-phone"></i> Call Now
+                            </a>
+                            <a href="https://wa.me/919876543210" class="btn btn-whatsapp">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <a href="#" class="page-link">4</a>
+                <a href="#" class="page-link"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2>Can't Find What You're Looking For?</h2>
+                    <p>Tell us your requirements and we'll find the perfect property for you within 24 hours!</p>
+                </div>
+                <div class="cta-buttons">
+                    <a href="tel:+919876543210" class="btn btn-white btn-large">
+                        <i class="fas fa-phone-alt"></i> Call: +91 98765 43210
+                    </a>
+                    <a href="https://wa.me/919876543210" class="btn btn-whatsapp btn-large">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon"><i class="fas fa-building"></i></span>
+                        <span class="logo-text">Indian Homes<span>Realty</span></span>
+                    </a>
+                    <p>India's most trusted real estate company with 15+ years of experience. We help you find your dream home with complete transparency and legal support.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="properties.html">Properties</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Property Types</h4>
+                    <ul>
+                        <li><a href="properties.html?type=apartment">Apartments</a></li>
+                        <li><a href="properties.html?type=villa">Villas</a></li>
+                        <li><a href="properties.html?type=plot">Plots</a></li>
+                        <li><a href="properties.html?type=commercial">Commercial</a></li>
+                        <li><a href="properties.html?type=rental">Rental Properties</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Popular Locations</h4>
+                    <ul>
+                        <li><a href="properties.html?location=omr">OMR</a></li>
+                        <li><a href="properties.html?location=ecr">ECR</a></li>
+                        <li><a href="properties.html?location=anna-nagar">Anna Nagar</a></li>
+                        <li><a href="properties.html?location=velachery">Velachery</a></li>
+                        <li><a href="properties.html?location=adyar">Adyar</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Chennai Homes Realty. All Rights Reserved. | RERA Registered: TN/REG/2024/XXXXX</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating CTA -->
+    <div class="floating-cta">
+        <a href="tel:+919876543210" class="floating-btn phone">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+        <a href="https://wa.me/919876543210" class="floating-btn whatsapp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

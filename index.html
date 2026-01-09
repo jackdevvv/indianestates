@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="India's Premier Real Estate Company. Find your dream home, apartments, villas & plots across India. Expert property consultants with 15+ years experience.">
+    <meta name="keywords" content="real estate India, property India, flats India, apartments India, villas India, plots India, buy property India">
+    <title>Indian Homes Realty | Premium Real Estate in India | Apartments, Villas & Plots</title>
+    
+    <!-- Google Ads Conversion Tracking Placeholder -->
+    <!-- Add your Google Ads gtag.js here -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-info">
+                    <span><i class="fas fa-map-marker-alt"></i> India</span>
+                    <span><i class="fas fa-envelope"></i> info@indianhomesrealty.com</span>
+                </div>
+                <div class="top-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon"><i class="fas fa-building"></i></span>
+                    <span class="logo-text">Indian Homes<span>Realty</span></span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="properties.html">Properties</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="tel:+919876543210" class="phone-btn">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+91 98765 43210</span>
+                    </a>
+                </div>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-badge">🏆 India's Most Trusted Real Estate Partner</span>
+                <h1>Find Your Dream<br><span>Home in India</span></h1>
+                <p>Premium Apartments, Luxury Villas & Prime Plots across Delhi, Mumbai, Bangalore, Chennai & More</p>
+                
+                <!-- Quick Enquiry Form - Above Fold -->
+                <div class="hero-form">
+                    <h3><i class="fas fa-search"></i> Quick Property Search</h3>
+                    <form id="quickSearchForm" action="properties.html" method="GET">
+                        <div class="form-row">
+                            <select name="type" required>
+                                <option value="">Property Type</option>
+                                <option value="apartment">Apartment</option>
+                                <option value="villa">Villa</option>
+                                <option value="plot">Plot</option>
+                                <option value="commercial">Commercial</option>
+                            </select>
+                            <select name="location" required>
+                                <option value="">Select Location</option>
+                                <option value="delhi">Delhi</option>
+                                <option value="mumbai">Mumbai</option>
+                                <option value="bangalore">Bangalore</option>
+                                <option value="chennai">Chennai</option>
+                                <option value="hyderabad">Hyderabad</option>
+                                <option value="pune">Pune</option>
+                                <option value="kolkata">Kolkata</option>
+                            </select>
+                            <select name="budget">
+                                <option value="">Budget Range</option>
+                                <option value="30-50">₹30L - ₹50L</option>
+                                <option value="50-80">₹50L - ₹80L</option>
+                                <option value="80-1cr">₹80L - ₹1Cr</option>
+                                <option value="1cr-2cr">₹1Cr - ₹2Cr</option>
+                                <option value="2cr+">₹2Cr+</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <i class="fas fa-search"></i> Search Properties
+                        </button>
+                    </form>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Properties Sold</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">1000+</span>
+                        <span class="stat-label">Happy Families</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="trust-badges">
+        <div class="container">
+            <div class="badges-grid">
+                <div class="badge-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>RERA Registered</span>
+                </div>
+                <div class="badge-item">
+                    <i class="fas fa-certificate"></i>
+                    <span>ISO Certified</span>
+                </div>
+                <div class="badge-item">
+                    <i class="fas fa-award"></i>
+                    <span>Award Winning</span>
+                </div>
+                <div class="badge-item">
+                    <i class="fas fa-handshake"></i>
+                    <span>100% Transparent</span>
+                </div>
+                <div class="badge-item">
+                    <i class="fas fa-file-contract"></i>
+                    <span>Legal Verified</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section class="featured-properties section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Featured Listings</span>
+                <h2>Premium Properties in India</h2>
+                <p>Hand-picked properties with the best value and locations</p>
+            </div>
+            
+            <div class="properties-grid">
+                <!-- Property Card 1 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600" alt="Luxury Apartment in Mumbai">
+                        <span class="property-price">₹1.85 Crores</span>
+                        <div class="property-overlay">
+                            <a href="property-details.html" class="btn btn-white">View Details</a>
+                        </div>
+                    </div>
+                    <div class="property-content">
+                        <span class="property-tag hot">Hot Deal</span>
+                        <div class="property-location">
+                            <i class="fas fa-map-marker-alt"></i> Mumbai, Maharashtra
+                        </div>
+                        <h3>Luxury 3 BHK Apartment</h3>
+                        <p class="property-desc">Modern apartment with premium amenities, swimming pool, gym & 24/7 security</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 3 Beds</span>
+                            <span><i class="fas fa-bath"></i> 2 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 1650 sqft</span>
+                        </div>
+                        <div class="property-footer">
+                            <a href="tel:+919876543210" class="btn btn-outline-primary">
+                                <i class="fas fa-phone"></i> Call Now
+                            </a>
+                            <a href="https://wa.me/919876543210" class="btn btn-whatsapp">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card 2 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600" alt="Villa in Delhi">
+                        <span class="property-price">₹4.5 Crores</span>
+                        <div class="property-overlay">
+                            <a href="property-details.html" class="btn btn-white">View Details</a>
+                        </div>
+                    </div>
+                    <div class="property-content">
+                        <span class="property-tag premium">Premium</span>
+                        <div class="property-location">
+                            <i class="fas fa-map-marker-alt"></i> Delhi, NCR
+                        </div>
+                        <h3>Spacious 4 BHK Villa</h3>
+                        <p class="property-desc">Stunning villa with private garden, parking & modern interiors</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 4 Beds</span>
+                            <span><i class="fas fa-bath"></i> 4 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 3200 sqft</span>
+                        </div>
+                        <div class="property-footer">
+                            <a href="tel:+919876543210" class="btn btn-outline-primary">
+                                <i class="fas fa-phone"></i> Call Now
+                            </a>
+                            <a href="https://wa.me/919876543210" class="btn btn-whatsapp">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card 3 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600" alt="Apartment in Bangalore">
+                        <span class="property-price">₹1.2 Crores</span>
+                        <div class="property-overlay">
+                            <a href="property-details.html" class="btn btn-white">View Details</a>
+                        </div>
+                    </div>
+                    <div class="property-content">
+                        <span class="property-tag new">New Launch</span>
+                        <div class="property-location">
+                            <i class="fas fa-map-marker-alt"></i> Bangalore, Karnataka
+                        </div>
+                        <h3>Premium 3 BHK Flat</h3>
+                        <p class="property-desc">Newly launched project in prime location with clubhouse & landscaped gardens</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 3 Beds</span>
+                            <span><i class="fas fa-bath"></i> 3 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 1850 sqft</span>
+                        </div>
+                        <div class="property-footer">
+                            <a href="tel:+919876543210" class="btn btn-outline-primary">
+                                <i class="fas fa-phone"></i> Call Now
+                            </a>
+                            <a href="https://wa.me/919876543210" class="btn btn-whatsapp">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-footer">
+                <a href="properties.html" class="btn btn-primary btn-large">
+                    View All Properties <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Why Choose Us</span>
+                <h2>India's Most Trusted Real Estate Partner</h2>
+                <p>We make property buying simple, transparent and hassle-free</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-search-dollar"></i>
+                    </div>
+                    <h3>Best Price Guarantee</h3>
+                    <p>We negotiate the best deals ensuring you get maximum value for your investment</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-signature"></i>
+                    </div>
+                    <h3>Legal Assistance</h3>
+                    <p>Complete legal verification and documentation support for worry-free transactions</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>1000+ Properties</h3>
+                    <p>Wide range of verified properties across India's prime locations</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-rupee-sign"></i>
+                    </div>
+                    <h3>Home Loan Support</h3>
+                    <p>Tie-ups with leading banks for easy loan approvals at best interest rates</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Expert Consultants</h3>
+                    <p>Dedicated property experts to guide you through every step of the process</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock customer support for all your queries and site visits</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2>Looking for Your Dream Home?</h2>
+                    <p>Get FREE expert consultation from our property specialists. We'll help you find the perfect property within your budget.</p>
+                </div>
+                <div class="cta-buttons">
+                    <a href="tel:+919876543210" class="btn btn-white btn-large">
+                        <i class="fas fa-phone-alt"></i> Call: +91 98765 43210
+                    </a>
+                    <a href="https://wa.me/919876543210?text=Hi,%20I'm%20interested%20in%20buying%20property%20in%20Chennai" class="btn btn-whatsapp btn-large">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations We Serve -->
+    <section class="locations section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Coverage</span>
+                <h2>Properties Across India</h2>
+                <p>We cover all prime locations in major Indian cities</p>
+            </div>
+            
+            <div class="locations-grid">
+                <a href="properties.html?location=mumbai" class="location-card">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400" alt="Mumbai">
+                    <div class="location-overlay">
+                        <h3>Mumbai</h3>
+                        <span>120+ Properties</span>
+                    </div>
+                </a>
+                <a href="properties.html?location=delhi" class="location-card">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=400" alt="Delhi">
+                    <div class="location-overlay">
+                        <h3>Delhi</h3>
+                        <span>85+ Properties</span>
+                    </div>
+                </a>
+                <a href="properties.html?location=bangalore" class="location-card">
+                    <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=400" alt="Bangalore">
+                    <div class="location-overlay">
+                        <h3>Bangalore</h3>
+                        <span>95+ Properties</span>
+                    </div>
+                </a>
+                <a href="properties.html?location=chennai" class="location-card">
+                    <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=400" alt="Chennai">
+                    <div class="location-overlay">
+                        <h3>Chennai</h3>
+                        <span>70+ Properties</span>
+                    </div>
+                </a>
+                <a href="properties.html?location=hyderabad" class="location-card">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400" alt="Hyderabad">
+                    <div class="location-overlay">
+                        <h3>Hyderabad</h3>
+                        <span>60+ Properties</span>
+                    </div>
+                </a>
+                <a href="properties.html?location=pune" class="location-card">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=400" alt="Pune">
+                    <div class="location-overlay">
+                        <h3>Pune</h3>
+                        <span>55+ Properties</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimonials</span>
+                <h2>What Our Clients Say</h2>
+                <p>Join 1000+ happy families who found their dream homes with us</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Excellent service! Chennai Homes Realty helped us find our dream apartment in OMR within our budget. The team was professional and transparent throughout the process."</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rajesh Kumar">
+                        <div>
+                            <h4>Rajesh Kumar</h4>
+                            <span>Bought 3BHK in OMR</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Very trustworthy company! They handled all the legal work and documentation perfectly. Highly recommend for anyone looking to buy property in Chennai."</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Priya Sharma">
+                        <div>
+                            <h4>Priya Sharma</h4>
+                            <span>Bought Villa in ECR</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The team's knowledge of Chennai real estate market is exceptional. They got us the best deal on our flat in Anna Nagar. Great experience overall!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Suresh Rajan">
+                        <div>
+                            <h4>Suresh Rajan</h4>
+                            <span>Bought 2BHK in Anna Nagar</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section section" id="enquiry">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-tag">Get In Touch</span>
+                    <h2>Free Property Consultation</h2>
+                    <p>Fill the form and our expert will call you within 30 minutes with the best property options matching your requirements.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Call Us</h4>
+                                <a href="tel:+919876543210">+91 98765 43210</a>
+                                <a href="tel:+914428550000">044 2855 0000</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email Us</h4>
+                                <a href="mailto:info@chennaihomesrealty.com">info@chennaihomesrealty.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Visit Us</h4>
+                                <p>No. 123, Anna Salai, Teynampet,<br>Chennai - 600018, Tamil Nadu</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Working Hours</h4>
+                                <p>Mon - Sat: 9:00 AM - 7:00 PM<br>Sunday: 10:00 AM - 5:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <form id="contactForm" class="contact-form">
+                        <h3>Request Callback</h3>
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name *" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Phone Number *" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                            <select name="propertyType" required>
+                                <option value="">Property Type *</option>
+                                <option value="apartment">Apartment</option>
+                                <option value="villa">Villa</option>
+                                <option value="plot">Plot</option>
+                                <option value="commercial">Commercial</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select name="budget" required>
+                                <option value="">Your Budget *</option>
+                                <option value="30-50">₹30L - ₹50L</option>
+                                <option value="50-80">₹50L - ₹80L</option>
+                                <option value="80-1cr">₹80L - ₹1Cr</option>
+                                <option value="1cr-2cr">₹1Cr - ₹2Cr</option>
+                                <option value="2cr+">₹2Cr+</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Any specific requirements..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-paper-plane"></i> Submit Enquiry
+                        </button>
+                        <p class="form-note"><i class="fas fa-lock"></i> Your information is 100% secure with us</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon"><i class="fas fa-building"></i></span>
+                        <span class="logo-text">Chennai Homes<span>Realty</span></span>
+                    </a>
+                    <p>Chennai's most trusted real estate company with 15+ years of experience. We help you find your dream home with complete transparency and legal support.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="properties.html">Properties</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Property Types</h4>
+                    <ul>
+                        <li><a href="properties.html?type=apartment">Apartments</a></li>
+                        <li><a href="properties.html?type=villa">Villas</a></li>
+                        <li><a href="properties.html?type=plot">Plots</a></li>
+                        <li><a href="properties.html?type=commercial">Commercial</a></li>
+                        <li><a href="properties.html?type=rental">Rental Properties</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Popular Locations</h4>
+                    <ul>
+                        <li><a href="properties.html?location=omr">OMR</a></li>
+                        <li><a href="properties.html?location=ecr">ECR</a></li>
+                        <li><a href="properties.html?location=anna-nagar">Anna Nagar</a></li>
+                        <li><a href="properties.html?location=velachery">Velachery</a></li>
+                        <li><a href="properties.html?location=adyar">Adyar</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Chennai Homes Realty. All Rights Reserved. | RERA Registered: TN/REG/2024/XXXXX</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating CTA -->
+    <div class="floating-cta">
+        <a href="tel:+919876543210" class="floating-btn phone">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+        <a href="https://wa.me/919876543210" class="floating-btn whatsapp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
